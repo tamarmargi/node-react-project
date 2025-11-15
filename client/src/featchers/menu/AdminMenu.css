@@ -1,0 +1,47 @@
+.divComponent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-Color: rgba(0, 0, 0, 0.5);
+    z-Index: 1000
+}
+
+.divComponent1 {
+    position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid white;
+        padding: 1rem;
+        background-Color: black;
+        z-Index: 1001;
+        
+        
+}
+
+
+.nav-link {
+    position: relative;
+    text-decoration: none; /* מסיר קו תחתון ברירת מחדל */
+    color: white; /* צבע הטקסט */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    right: 0; /* מתחיל מהצד הימני */
+    bottom: 0;
+    height: 2px; /* גובה הפס */
+    background-color: red; /* צבע הפס */
+    width: 100%; /* רוחב הפס */
+    transform: translateX(100%); /* מתחיל מחוץ לגבולות מימין */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* מעבר חלק */
+    opacity: 0; /* מתחיל עם שקיפות */
+}
+
+.nav-link:hover::after {
+    transform: translateX(0); /* עובר פנימה כאשר מעבירים את העכבר */
+    opacity: 1; /* עושה את הפס גלוי */
+}

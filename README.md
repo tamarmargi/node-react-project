@@ -20,8 +20,8 @@ A professional full-stack web application built with a **Node.js/Express** backe
 ### 🎨 Frontend
 * **React.js** (Component-based UI)
 * **HTML5 & CSS3** (Responsive modern styling)
-* **Axios** (Promise-based HTTP client for API requests)
-
+* **Redux / Redux Toolkit** (Global state management)
+  
 ### 🔌 Backend
 * **Node.js** (JavaScript runtime environment)
 * **Express.js** (Minimalist web framework for APIs)
